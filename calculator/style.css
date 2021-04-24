@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans';
+}
+
+.calculator {
+    width: 400px;
+    border: 1px solid orchid;
+    margin: auto;
+}
+
+.screen {
+    width: 100%;
+    margin-top: 0px;
+    height: 50px;
+    background-color: #5DABE8;
+}
+
+.buttons {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #b3b3b3;
+    padding: 0;
+    margin: 10px 5px;
+    font-size: 28px;
+    color: #fff;
+}
