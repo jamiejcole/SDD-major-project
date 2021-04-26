@@ -48,10 +48,12 @@ button {
     background-color: #6e6e6e;
     text-shadow: 0 1px rgba(255,255,255,.4);
     color: #fff;
-  }
+    transition: 0.3s;
+}
   
 button:hover {
     background-color: #575757;
+    font-size: 2.3rem;
 }
   
 .operator {
