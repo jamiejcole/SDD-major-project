@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 body {
     font-size: 40px;
     box-sizing: border-box;
+    font-family: 'Roboto';
+    background-image: linear-gradient(120deg, #747474, #535c68);
+    height: 100vh;
 }
   
 * {
@@ -10,13 +15,15 @@ body {
 }
 
 .calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid rgb(99, 99, 99);
+    border-radius: 8px;
+    width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    background-image: linear-gradient(20deg, rgba(184, 233, 148, 0.8), rgba(248, 194, 145, 0.8));
+    
 }
 
 .calculator-screen {
@@ -24,10 +31,71 @@ body {
     font-size: 40px;
     height: 80px;
     border: none;
-    background-color: #4d4d4d;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #333333;
     color: #fff;
     text-align: right;
     padding-right: 20px;
     padding-left: 10px;
 }
 
+button {
+    height: 60px;
+    border-radius: 3px;
+    border: 1px solid #383838;
+    font-size: 2rem;
+    background-color: #6e6e6e;
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    color: #fff;
+  }
+  
+button:hover {
+    background-color: #575757;
+}
+  
+.operator {
+    color: #337cac;
+}
+  
+.all-clear {
+    background-image: linear-gradient(75deg, #d63927, #e74c3c);
+    border-color: #b0353a;
+    color: #fff;
+}
+  
+.all-clear:hover { opacity: 0.65; }
+  
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.equal-sign {
+    background-image: linear-gradient(75deg, #f39c12, #e67e22);
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+}
+
+.equal-sign:hover { opacity: 0.65; }
+
+
+footer {
+    position: fixed;
+    font-size: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(20deg, rgba(184, 233, 148, 0.8), rgba(248, 194, 145, 0.8));
+    color: white;
+    text-align: center;
+}
