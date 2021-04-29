@@ -7,6 +7,28 @@
     <title>DVD-Rental</title>
 </head>
 <body>
-    
+    <p>** DVD Shop **</p>
+    <p>1. Select a DVD to Rent</p>
+    <p>2. Cost of rental</p>
+    <p>3. Customer details</p>
+    <p>4. Customer credit card details</p>
+    <p>5. Exit</p>
+    <input class="text" id="text" placeholder="Enter option">
+    <button class="button" onClick="load()">Go</button>
 </body>
+
+<script>
+    function load() { 
+        var choice = document.getElementById('text').value;
+
+        if (choice == '1' || choice == '2' || choice == '3' || choice == '4') {
+            alert("You choose option " + choice);
+        } else if (choice == '5') {
+            alert("Exiting...");
+            window.close();
+        } else {
+            alert('Error in number input, input number 1-5. You entered: ' + choice);
+        }
+    }
+</script>
 </html>
