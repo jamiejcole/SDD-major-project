@@ -7,7 +7,11 @@ Plain HTML/CSS and JS, no libraries.
 
 ### 📝 TODO
 - Fix input bugs in calculator (e.g. 5--5)
-- Complete other three programs
+- Complete other two programs
+
+### ✅ Done 
+- Calculator
+- DVD Rental Program
 
 ### ⚠️ Disclaimer
 This is a school project for Software Design and Development
