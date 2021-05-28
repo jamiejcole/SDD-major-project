@@ -1,9 +1,77 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Untitled Document</title>
+<title>Unit conversion program</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
+<h1 class="headingOne">Unit Converter</h1>
+<h2 class="headingTwo">&#169; Jamie Cole 2021 NBCS</h2>
+
+<div class='grid'>
+    <div class="item length">
+        <h1>Length</h1>
+        <form name="converterLength">
+            Meters: <input type="text" name="m" onChange="mConverter()"><br />
+            Inch: <input type="text" name="inch" onChange="inchConverter()"><br />
+            Feet: <input type="text" name="feet" onChange="feetConverter()"><br />
+            <input type="button" value="Convert" class="submit"/>
+        </form>
+    </div>
+
+    <div class="item weight">
+        <h1>Weight</h1>
+        <form name="converterWeight">
+            Kilograms: <input type="text" name="kg" onChange="kgConverter()"><br />
+            Pounds: <input type="text" name="pounds" onChange="poundsConverter()"><br />
+            <input type="button" value="Convert" class="submit"/>
+        </form>
+    </div>
+
+
+    <div class="item temp">
+        <h1>Temperature</h1>
+        <form name="converterTemp">
+            Celsius: <input type="text" name="celc" onChange="celcConverter()" value="0"><br />
+            Fahrenheit: <input type="text" name="fahr" onChange="fahrConverter()" value="0"><br />
+            <input type="button" value="Convert" class="submit"/>
+        </form>
+    </div>
+</div>
+<script>
+
+    // Functions for length conversion
+    function mConverter(){
+        document.converterLength.inch.value = (document.converterLength.m.value * 39.37).toFixed(1);
+        document.converterLength.feet.value = (document.converterLength.m.value * 3.281).toFixed(2);
+    }
+    function inchConverter(){
+        document.converterLength.m.value = document.converterLength.inch.value * 2.54
+        document.converterLength.feet.value = document.converterLength.inch.value / 12
+    }
+    function feetConverter(){
+        document.converterLength.m.value = document.converterLength.feet.value * 30.48
+        document.converterLength.inch.value = document.converterLength.feet.value * 12
+    }
+
+    // Functions for weight conversion
+    function kgConverter(){
+        document.converterWeight.pounds.value = (document.converterWeight.kg.value * 2.205).toFixed(1);
+    }
+    function poundsConverter(){
+        document.converterWeight.kg.value = (document.converterWeight.pounds.value / 2.205).toFixed(1);
+    }
+
+    // Functions for temp conversion
+    function fahrConverter(){
+        document.converterTemp.celc.value = ((document.converterTemp.fahr.value - 32) / 1.8).toFixed(1);
+    }
+    function celcConverter(){
+        document.converterTemp.fahr.value = ((document.converterTemp.celc.value * 1.8) + 32).toFixed(1);
+    }
+
+
+</script>
 <body>
 </body>
 </html>
