@@ -12,6 +12,7 @@ Plain HTML/CSS and JS, no libraries.
 ### ✅ Done 
 - Calculator
 - DVD Rental Program
+- Unit Convertor
 
 ### ⚠️ Disclaimer
 This is a school project for Software Design and Development
