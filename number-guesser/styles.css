@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One');
+body {
+    font-family: 'Sigmar One';
+    background: rgb(61,238,156);
+    background: linear-gradient(347deg, rgba(61,238,156,1) 0%, rgba(0,185,99,1) 100%);
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.wave {
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0; 
+}
+
+.main {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+input, button {
+    background-color: rgb(218, 149, 0);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+button:hover {
+    background-color: rgb(196, 134, 0);
+}
+
+input {
+    background-color: rgb(216, 214, 71);
+}
+
+.inp {
+    margin: 20px;
+    width: 90px;
+    transition-duration: 200ms;
+}
+
+.inp:hover {
+    width: 110px;
+    transition-duration: 200ms;
+}

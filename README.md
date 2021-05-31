@@ -7,12 +7,13 @@ Plain HTML/CSS and JS, no libraries.
 
 ### 📝 TODO
 - Fix input bugs in calculator (e.g. 5--5)
-- Complete other two programs
+- Remove `Number Guesser` console.log answers!
 
 ### ✅ Done 
 - Calculator
 - DVD Rental Program
 - Unit Convertor
+- Number Guesser
 
 ### ⚠️ Disclaimer
 This is a school project for Software Design and Development
