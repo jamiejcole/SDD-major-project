@@ -18,16 +18,22 @@ nav {
 
 .nav-container {
     float: right;
+    margin-right: 50px;
 }
 
-nav > .nav-container > a {
+.nav-item {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 25px 24px;
+    padding: 25px 40px;
     text-decoration: none;
     font-size: 17px;
-    margin: auto;
+
+}
+
+.nav-item:hover {
+    border: 4px solid #fff;
+    transition-duration: 250ms;
 }
 
 nav > img {
