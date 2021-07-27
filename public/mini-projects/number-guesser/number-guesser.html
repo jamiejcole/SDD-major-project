@@ -23,7 +23,6 @@
     function guess() {
         var guess = document.getElementById("userNum").value;
         guesses += 1;
-        console.log('random num is: ' + num + 'user guess is: ' + guess);
 
         if (guess < num) {
             document.getElementById("notif").innerHTML = "A little higher...";

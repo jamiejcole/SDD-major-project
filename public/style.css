@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 
 body {
     font-family: 'Montserrat';
+	margin: 0px;
 }
 
-/* ----- Nav Menu Bar ----- */
+/* ----- Nav Menu Bar ----- nav color: #0abde3 */
 #cssmenu {
-	background: #f96e5b;
+	background-color: rgba(0, 0, 0, 0.4);
 	width: auto;
     padding-top: 10px;
 }
@@ -58,24 +60,14 @@ body {
 }
 
 #cssmenu ul li a:hover {
-	color: #333333;
+	color: #7e7e7e;
 }
 
 #cssmenu ul li a:hover:before {
 	width: 100%;
 }
 
-#cssmenu ul li a:after {
-	content: "";
-	display: block;
-	position: absolute;
-	right: -3px;
-	top: 19px;
-	height: 6px;
-	width: 6px;
-	background: #ffffff;
-	opacity: .5;
-}
+
 
 #cssmenu ul li a:before {
 	content: "";
@@ -95,7 +87,7 @@ body {
 }
 
 #cssmenu ul li.active a {
-	color: #333333;
+	color: #7e7e7e;
 }
 
 #cssmenu ul li.active a:before {
@@ -116,7 +108,7 @@ body {
     padding-left: 10px;
 }
 
-img {
+.logo {
     width: 50px;
     height: 50px;
     float: left;
@@ -128,3 +120,171 @@ img {
 }
 
 /* ----- END Nav Menu Bar ----- */
+.section-1 {
+	width: 100%;
+	height: 900px;	
+}
+
+.backdrop-img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	object-fit: cover;
+	-webkit-filter: brightness(40%);
+	z-index: -1;
+}
+
+
+
+.greeting {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 56px;
+	background: #A8FFB1;
+	background: -webkit-linear-gradient(to right, #A8FFB1 0%, #425FF3 100%);
+	background: -moz-linear-gradient(to right, #A8FFB1 0%, #425FF3 100%);
+	background: linear-gradient(to right, #A8FFB1 0%, #425FF3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 300px;
+	padding-top: 250px;
+	padding-left: 200px;
+	animation: fadeIn linear 0.5s;	
+}
+
+
+
+/* ----- Projects Page 1 ----- */
+
+.proj-section-1 {
+	margin-top: 100px;
+	height: 450px;
+	width: 70%;
+	background: rgb(243,106,62);
+	background: linear-gradient(36deg, rgba(243,106,62,1) 0%, rgba(243,106,62,1) 0%, rgba(255,179,11,1) 100%);
+	padding: 50px 20px;
+	color: #fff;
+	border-radius: 20px;
+	margin-left: 40px;
+}
+
+.proj-section-1 > img {
+	float: left;
+	padding-right: 50px;
+	padding-left: 30px;
+}
+
+.proj-section-1 h1 { font-size: 40px; }
+
+.project-text {
+	width: 500px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+/* ----- END PROJECTS PAGE 1 ----- */
+
+/* ----- Projects Page 2 ----- */
+
+.proj-section-2 {
+	margin-top: 100px;
+	height: 350px;
+	width: 70%;
+	background: rgb(243,106,62);
+	background: linear-gradient(12deg, rgba(243,106,62,1) 0%, rgba(243,106,62,1) 0%, rgba(255,179,11,1) 100%);
+	padding: 50px 20px;
+	color: #fff;
+	border-radius: 20px;
+	margin-right: 40px;
+	margin-left: 25%;
+}
+
+.proj-section-2 > img {
+	float: right;
+	padding-right: 50px;
+	padding-left: 30px;
+}
+
+.proj-section-2 h1 { font-size: 40px; padding-left: 50px; }
+
+.project-text-2 {
+	width: 500px;
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+/* ----- END PROJECTS PAGE 2 ----- */
+
+/* ----- Projects Page 3 ----- */
+
+.proj-section-3 {
+	margin-top: 100px;
+	height: 400px;
+	width: 70%;
+	background: rgb(243,106,62);
+	background: linear-gradient(106deg, rgba(243,106,62,1) 0%, rgba(243,106,62,1) 0%, rgba(255,179,11,1) 100%);
+	padding: 50px 20px;
+	color: #fff;
+	border-radius: 20px;
+	margin-left: 40px;
+}
+
+.proj-section-3 > img {
+	float: left;
+	padding-right: 50px;
+	padding-left: 40px;
+	vertical-align: inherit;
+	width: 450px;
+}
+
+.proj-section-3 h1 { font-size: 40px; }
+
+.project-text-3 {
+	width: 500px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+/* ----- END PROJECTS PAGE 3 ----- */
+
+/* ----- Projects Page 4 ----- */
+
+.proj-section-4 {
+	margin-top: 100px;
+	height: 350px;
+	width: 70%;
+	background: rgb(243,106,62);
+	background: linear-gradient(12deg, rgba(243,106,62,1) 0%, rgba(243,106,62,1) 0%, rgba(255,179,11,1) 100%);
+	padding: 50px 20px;
+	color: #fff;
+	border-radius: 20px;
+	margin-right: 40px;
+	margin-left: 25%;
+	margin-bottom: 200px;
+}
+
+.proj-section-4 > img {
+	float: right;
+	padding-right: 50px;
+	padding-left: 30px;
+	width: 350px;
+}
+
+.proj-section-4 h1 { font-size: 40px; padding-left: 50px; }
+
+.project-text-4 {
+	width: 500px;
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+/* ----- END PROJECTS PAGE 4 ----- */
+
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+  

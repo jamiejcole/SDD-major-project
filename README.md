@@ -7,9 +7,8 @@ Plain HTML/CSS and JS, no libraries.
 
 ### 📝 TODO
 - Fix input bugs in calculator (e.g. 5--5)
-- Remove `Number Guesser` console.log answers!
 - Check that the project file structure is compatible with Webstorm
-- FIX portfolio :hover
+- Add Hover opacity overlay effects to imgs on projects page, and link imgs to each project
 
 ### ✅ Done 
 - Calculator
