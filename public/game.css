@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+html { height: 100%; }
+
+body {
+    font-family: 'Montserrat';
+    background: rgb(131,58,180);
+    background: linear-gradient(51deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: saddlebrown;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 400px}
+    100%{left:-50px}
+}
+
+#counter {
+    padding-left: 500px;
+}
+
+#highscore {
+    position: absolute;
+    padding-left: 500px;
+    padding-top: 30px;
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    background-color: rosybrown;
+    opacity: 1;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: lightblue;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
+
+#character > img {
+    position: absolute;
+    width: 100px;
+    left: -20px;
+    top: -20px;
+}

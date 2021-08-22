@@ -6,120 +6,6 @@ body {
 	margin: 0px;
 }
 
-/* ----- Nav Menu Bar ----- nav color: #0abde3 */
-#cssmenu {
-	background-color: rgba(0, 0, 0, 0.4);
-	width: auto;
-    padding-top: 10px;
-}
-
-#cssmenu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-	display: block;
-	zoom: 1;
-}
-
-#cssmenu ul:after {
-	content: " ";
-	display: block;
-	font-size: 0;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
-#cssmenu ul li {
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-    float: right;
-}
-
-#cssmenu.align-right ul li {
-	float: right;
-}
-
-#cssmenu.align-center ul {
-	text-align: center;
-}
-
-#cssmenu ul li a {
-	color: #ffffff;
-	text-decoration: none;
-	display: block;
-	padding: 15px 54px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 18px;
-	position: relative;
-	transition: color .25s;
-}
-
-#cssmenu ul li a:hover {
-	color: #7e7e7e;
-}
-
-#cssmenu ul li a:hover:before {
-	width: 100%;
-}
-
-
-
-#cssmenu ul li a:before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 3px;
-	width: 0;
-	background: #333333;
-	transition: width .25s;
-}
-
-#cssmenu ul li.last>a:after,
-#cssmenu ul li:last-child>a:after {
-	display: none;
-}
-
-#cssmenu ul li.active a {
-	color: #7e7e7e;
-}
-
-#cssmenu ul li.active a:before {
-	width: 100%;
-}
-
-#cssmenu.align-right li.last>a:after,
-#cssmenu.align-right li:last-child>a:after {
-	display: block;
-}
-
-#cssmenu.align-right li:first-child a:after {
-	display: none;
-}
-  
-
-.fas {
-    padding-left: 10px;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    float: left;
-    
-    border-radius: 50%;
-    margin: -6px 20px;
-    vertical-align: middle;
-    position: absolute;
-}
-
-/* ----- END Nav Menu Bar ----- */
 .section-1 {
 	width: 100%;
 	height: 900px;	
@@ -168,7 +54,7 @@ body {
 	margin-left: 40px;
 }
 
-.proj-section-1 > img {
+.proj-section-1 > a > img {
 	float: left;
 	padding-right: 50px;
 	padding-left: 30px;
@@ -199,7 +85,7 @@ body {
 	margin-left: 25%;
 }
 
-.proj-section-2 > img {
+.proj-section-2 > a > img {
 	float: right;
 	padding-right: 50px;
 	padding-left: 30px;
@@ -230,7 +116,7 @@ body {
 	margin-left: 40px;
 }
 
-.proj-section-3 > img {
+.proj-section-3 > a > img {
 	float: left;
 	padding-right: 50px;
 	padding-left: 40px;
@@ -264,7 +150,7 @@ body {
 	margin-bottom: 200px;
 }
 
-.proj-section-4 > img {
+.proj-section-4 > a > img {
 	float: right;
 	padding-right: 50px;
 	padding-left: 30px;
@@ -280,6 +166,12 @@ body {
 	padding-left: 50px;
 }
 
+.proj-img:hover {
+	-webkit-filter: brightness(50%);
+	transition: 250ms;
+}
+
+
 /* ----- END PROJECTS PAGE 4 ----- */
 
 
@@ -288,3 +180,99 @@ body {
 	100% {opacity:1;}
 }
   
+.certs-1 {
+	padding-top: 50px;
+}
+
+.certs-main > .certs-1 > h1 {
+	padding: 20px 100px;
+	color: rgb(53, 53, 53);
+}
+
+.language-css {
+	width: 48%;
+	border-radius: 50px;
+}
+
+.language-javascript {
+	width: 38%;
+	border-radius: 50px;
+}
+
+.mod-1 {
+	margin-left: 100px;
+	width: 100%;
+}
+
+.sses {
+	width: 60%;
+}
+
+.mod-2 {
+	margin-left: 55%;
+	position: relative;
+	width: 100%;
+	top: -100px;
+}
+
+
+
+.certs-1 > img {
+	float: right;
+	position: relative;
+	width: 30%;
+	top: -690px;
+	padding-right: 100px;
+}
+
+.certs-1 > .p1 {
+	position: relative;
+	width: 30%;
+	margin-left: auto;
+	margin-right: 0;
+	top: -600px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+.certs-1 > .p2 {
+	position: relative;
+	width: 30%;
+	margin-right: auto;
+	margin-left: 0;
+	top: -1500px;
+	padding-left: 100px;
+	text-align: center;
+}
+
+.certs-1 > .img2 {
+	float: left;
+	position: relative;
+	width: 30%;
+	top: -1590px;
+	padding-left: 100px;
+
+}
+
+.certs-1 > p {
+	font-size: 20px;
+	float: right;
+}
+
+.download {
+	text-decoration: none;
+	background-color: #6475cc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.breaker {
+	width: 85%;
+	height: 6px;
+	background-color:rgb(102, 102, 102);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -400px;
+	border-radius: 2px;
+}

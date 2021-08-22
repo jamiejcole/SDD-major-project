@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Jamie Cole</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="prism.css" rel="stylesheet">
+</head>
+
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
+
+
+<body style="background: #b9b9b9;">
+    <!-- Navigation Bar -->
+    <div id='cssmenu'>
+        <img class="logo" src='images/jc-logo-clear-white.png'>
+        <ul>
+           <li class='last'><a href='help.html'><span>Help<i class="fas fa-question-circle"></i></span></a></li>
+           <li><a href='game.html'><span>JS Game<i class="fas fa-gamepad"></i></span></a></li>
+           <li class='active'><a href='certificates.html'><span>Certificates<i class="fas fa-trophy"></i></span></a></li>
+           <li><a href='projects.html'><span>Projects<i class="fas fa-tools"></i></span></a></li>
+           <li><a href='index.html'><span>Home<i class="fas fa-home"></i></span></a></li>
+        </ul>
+    </div> 
+
+    <!-- Main 1-->
+    <div class="certs-main">
+        <div class="certs-1">
+            <h1>Introduction to HTML/CSS</h1>
+            <div class="mod-1"><pre><code class="language-css">
+    @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+    * { box-sizing: border-box; }
+
+    body {
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+
+    footer > ul {
+        padding: 0;
+    }
+
+    footer > ul > li {
+        display: inline-block;
+        padding: 10px 10px;
+    }
+
+    nav {
+        background-color: rgb(110, 23, 65);
+    }
+
+    nav > ul { padding: 0; }
+    nav > ul > li { display: inline-block; padding: 10px 30px; }
+    nav > ul > li > a { color: #fff; text-decoration: none; }
+            </code></pre></div>
+
+            <img src="images/cert-intro-html-1.png">
+            <div class="p1"><p>The Introduction to HTML/CSS Grok Course involved learning the foundationary aspects of HTML and CSS web development.<br><br><a class="download" href="certs/cert-intro-html.pdf">Download Certificate<i class="fas fa-arrow-circle-down"></i></a></p></div>
+        </div>
+
+        <div class="breaker"></div>
+
+        <!-- Main 2-->
+        <div class="certs-1">
+            <h1>Interactive webpages with JavaScript</h1>
+            <div class="mod-2"><pre><code id="c-m2" class="language-javascript m2">
+    function checkSlidersAlign(event) {
+        if (event.target.value == rangeOne.value) {
+            event.target.classList.add('aligned');
+        } else { 
+            event.target.classList.remove('aligned'); 
+        }
+        
+        if (rangeTwo.value == rangeOne.value) {
+            if (rangeThree.value == rangeTwo.value) {
+                finishPuzzleOne.classList.remove('hidden');
+            }
+        }
+    }
+
+    function doneP1() {
+        puzzleOne.classList.add('hidden');
+        puzzleTwo.classList.remove('hidden');
+    }
+
+    rangeInputs.onchange = checkSlidersAlign;
+    finishPuzzleOne.onclick = doneP1;
+
+    // puzzle two:
+    function s1() { 
+        stepOne.classList.add('unlocked'); 
+    }
+
+    function s2() {
+        if (stepOne.classList.contains('unlocked')) { 
+            stepTwo.classList.add('unlocked'); 
+        }
+    }
+
+    function s3() {
+        if (stepTwo.classList.contains('unlocked')) {
+            stepThree.classList.add('unlocked');
+            finishPuzzleTwo.classList.remove('hidden');
+        }
+    }
+
+    function doneP2() {
+        puzzleTwo.classList.add('hidden');
+        puzzleThree.classList.remove('hidden');
+    }
+
+    stepOne.onclick = s1;
+    stepTwo.onclick = s2;
+    stepThree.onclick = s3;
+    finishPuzzleTwo.onclick = doneP2;
+    // Final stage
+
+    function checkFin() {
+        if (finalInput.value == 'one two three') {
+            puzzleThree.classList.add('hidden');
+            celebration.classList.remove('hidden');
+        }
+    }
+
+    finishPuzzleThree.onclick = checkFin;
+            </code></pre></div>
+
+            <img class="img2" src="images/cert-intro-js-1.png">
+            <div class="p2"><p>The interative webpages with JavaScript course enriched my already existing HTML/CSS knowledge and also began to teach me the foundations of JavaScript. This sample code is an example from the <i>Spooky Puzzle</i> Grok problem.<br><br><a class="download" href="certs/cert-intro-js.pdf">Download Certificate<i class="fas fa-arrow-circle-down"></i></a></p></div>
+        </div>
+
+        <div class="breaker"></div>
+
+    </div>
+
+    
+
+
+
+
+
+    <!-- Main 1-->
+    <div class="certs-main">
+        <div class="certs-1">
+            <h1>Web.Comp Tournament</h1>
+            <div class="sses mod-1"><pre><code id="c-m3" class="language-css m1">
+    .button {
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px 40px;
+        background: seagreen;
+        color: white;
+        border-radius: 4px;
+        border: 2px solid seagreen;
+    }
+        
+    .button:hover {
+        border-color: mediumseagreen;
+        background: mediumseagreen;
+        color: white;
+    }
+        
+    nav {
+        background-color: mediumseagreen;
+        text-align: center;
+        position: fixed;
+        width: 300px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+    }
+        
+    .nav-link {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        width: 260px;
+    }
+        
+    .active, .nav-link:hover {
+        background-color: seagreen;
+    }
+            </code></pre></div>
+
+            <img style="margin-right: 200px; margin-top: -300px;" src="images/cert-webcomp-intermediate.png">
+            <div style="margin-right: 200px; padding-bottom: 100px;" class="p1"><p>The Web.Comp Intermediate competition was a web design competition that tested our skills in regards to design and UI/UX. I achieved a perfect score in this competition. The Web.Comp Tournament also featured a <strong>design competition</strong> where we had to create a 'plant themed' storefront website.</strong><br><br><a class="download" href="certs/cert-webcomp-intermediate.pdf">Download Certificate (Tourney)<i class="fas fa-arrow-circle-down"></i></a><br><br><a class="download" href="certs/cert-webcomp-design.pdf">Download Certificate (Design)<i class="fas fa-arrow-circle-down"></i></a></p></div>
+        </div>
+
+
+        
+
+        <div class="breaker"></div>
+
+        <div class="certs-1">
+            <h1 style="padding-bottom: 100px;">DT JavaScript Challenges</h1>
+            <div class="mod-2"><pre><code id="c-m2" class="language-javascript m2">
+    // Cookie Clicker
+    let count = 0;
+    function change() {
+        count++;
+        let counter = document.querySelector('i');
+        counter.textContent = count;
+        let cookie = document.querySelector('img');
+        cookie.src = 'cookie.png';
+    }
+
+    // Geography
+    let map = loadMap('map', [40, -100], 3);
+
+    function addCity(city) {
+    if (city.population > 1000000) {
+        let marker = addMarker(map, [city.latitude, city.longitude], {
+        popup: city.name,
+        });
+        return marker;
+    }
+    }
+
+    function addCities(cities) {
+    cities.forEach(addCity);
+    }
+
+    fetch('us-cities.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(addCities);
+            </code></pre></div>
+
+            <img style="margin-top: 700px;" class="img2" src="images/cert-dt.png">
+            <div class="p2"><p>The DT JavaScript Mini Challenges involved three items: <strong>Geography</strong>, <strong>Cookie Clicker</strong> and <strong>Space Invaders</strong>. These three programming challenges gave me a deeper understanding into the JavaScript language.<br><br><a class="download" href="certs/cert-mini-cookie-clicker.pdf">Download Certificate (Cookie Clicker)<i class="fas fa-arrow-circle-down"></i></a><br><br><a class="download" href="certs/cert-mini-geo.pdf">Download Certificate (Geography)<i class="fas fa-arrow-circle-down"></i></a><br><br><a class="download" href="certs/cert-mini-space-invaders.pdf">Download Certificate (Space Invaders)<i class="fas fa-arrow-circle-down"></i></a></p></div>
+        </div>
+
+
+    </div>
+
+
+    <script src="prism.js"></script>
+</body>
+</html>

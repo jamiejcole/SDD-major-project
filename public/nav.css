@@ -1,0 +1,114 @@
+/* ----- Nav Menu Bar ----- nav color: #0abde3 */
+#cssmenu {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: auto;
+    padding-top: 10px;
+}
+
+#cssmenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	zoom: 1;
+}
+
+#cssmenu ul:after {
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#cssmenu ul li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+    float: right;
+}
+
+#cssmenu.align-right ul li {
+	float: right;
+}
+
+#cssmenu.align-center ul {
+	text-align: center;
+}
+
+#cssmenu ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 15px 54px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	position: relative;
+	transition: color .25s;
+}
+
+#cssmenu ul li a:hover {
+	color: #7e7e7e;
+}
+
+#cssmenu ul li a:hover:before {
+	width: 100%;
+}
+
+
+
+#cssmenu ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: #333333;
+	transition: width .25s;
+}
+
+#cssmenu ul li.last>a:after,
+#cssmenu ul li:last-child>a:after {
+	display: none;
+}
+
+#cssmenu ul li.active a {
+	color: #7e7e7e;
+}
+
+#cssmenu ul li.active a:before {
+	width: 100%;
+}
+
+#cssmenu.align-right li.last>a:after,
+#cssmenu.align-right li:last-child>a:after {
+	display: block;
+}
+
+#cssmenu.align-right li:first-child a:after {
+	display: none;
+}
+  
+
+.fas {
+    padding-left: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    
+    border-radius: 50%;
+    margin: -6px 20px;
+    vertical-align: middle;
+    position: absolute;
+}
+
+/* ----- END Nav Menu Bar ----- */

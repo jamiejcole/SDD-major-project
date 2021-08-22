@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+html { height: 100%; }
+
+body {
+    font-family: 'Montserrat';
+    background: rgb(131,58,180);
+    background: linear-gradient(51deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+canvas {
+    width: 100%;
+}
+
+.canvas-wrapper {
+    border-color: #fff;
+    border-style: solid;
+    width: 90%;
+    margin: 30px;
+    padding: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+.game {
+    position: relative;
+}
+
+#score {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}

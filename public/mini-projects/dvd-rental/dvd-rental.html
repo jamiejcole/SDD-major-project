@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVD-Rental</title>
+    <link rel="stylesheet" href="../../nav.css">
 </head>
-<body>
+<body style="margin: 0;">
+    <!-- Navigation Bar -->
+    <div id='cssmenu'>
+        <img class="logo" src='../../images/jc-logo-clear-white.png'>
+        <ul>
+        <li class='last'><a href='#'><span>Contact<i class="fas fa-phone"></i></span></a></li>
+        <li><a href='#'><span>JS Game<i class="fas fa-gamepad"></i></span></a></li>
+        <li><a href='#'><span>Certificates<i class="fas fa-trophy"></i></span></a></li>
+        <li class='active'><a href='../../projects.html'><span>Projects<i class="fas fa-tools"></i></span></a></li>
+        <li><a href='../../index.html'><span>Home<i class="fas fa-home"></i></span></a></li>
+        </ul>
+    </div> 
+
+<div style="padding-left: 45%; padding-top: 10%;">
     <p>** DVD Shop **</p>
     <p>1. Select a DVD to Rent</p>
     <p>2. Cost of rental</p>
@@ -15,6 +29,7 @@
     <p>5. Exit</p>
     <input class="text" id="text" placeholder="Enter option">
     <button class="button" onClick="load()">Go</button>
+</div>
 </body>
 
 <script>

@@ -4,6 +4,7 @@ body {
     background: rgb(61,238,156);
     background: linear-gradient(347deg, rgba(61,238,156,1) 0%, rgba(0,185,99,1) 100%);
     color: white;
+    margin: 0px;
 }
 
 h1 {
