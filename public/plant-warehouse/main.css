@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat');
+
+body {
+  width: 1024px;
+  padding-top: 100px;
+  font-family: 'Quicksand';
+}
+
+.header > a { display: none; }
+
+nav {
+  background: url(wave-grok.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+  font-family: 'Caveat';
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 5px;
+}
+
+
+nav > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 30px;
+  transition-duration: 250ms;
+
+}
+
+nav > a:hover {
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.logo { margin: 0 }
+
+.header > h1 {
+  background-image: url(plants.svg);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: right 30px top 0px;
+  margin-right: 50px;
+  height: 400px;
+  padding-top: 140px;
+  padding-left: 0px;
+  margin-left: 100px;
+  color: rgb(48, 48, 48);
+}
+
+.header {
+  background-image: url(bg.svg);
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  padding-top: 300px;
+  background-position: bottom 100px left -90px;
+}
+
+.header > h1::after {
+  content: "\a Because everyone deserves to have jungle in their house";
+  font-size: 16px;
+  white-space: pre;
+}
+
+.header > h2 {
+  display: none;
+}
+
+.content > .about {
+  width: 300px;
+  margin: 0 50px;
+  height: 300px;
+  background: linear-gradient(to right, rgba(0,130,170,0), rgba(120, 224, 143,1.0)), url('about.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: left 0px top 0px;
+  padding: 100px;
+  text-align: right;
+  color: white;
+  padding-bottom: 100px;
+  border-radius: 20px;
+}
+
+.content > .about > h2 {
+  position: relative;
+  top: -90px;
+  right: -60px;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+}
+
+.content > .about > h2::after {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  font-size: 16px;
+  width: 50px;
+  content: "\a\a\a Add a touch of luxe to your house \awith some gorgeous greens. \aWe set up shop in warehouses \a around Australia, hosting one-day \asales of more plants than\a an Amazonian jungle. \a\a\a\a We specialise in indoor plants, but \awe cater to the outdoorsy types \a as well and we even get the \a occasional rare collectible. Check \a out our range to see our current \a selection of jungle goodies.";
+  white-space: pre;
+  text-align: right;
+  color: rgb(48, 48, 48);
+  font-weight: 500;
+}
+
+.content > .about > p {
+  position: relative;
+  top: -80px;
+  right: -40px;
+  font-size: 14px;
+  padding-bottom: 10px;
+  z-index: -1;
+}
+
+.about > p > a { display: none; }
+
+
+
+.locations {
+  position: absolute;
+  background-image: linear-gradient(-12deg, rgba(0,130,170,0), rgba(120, 224, 143,1.0));
+  top: 1050px;
+  right: 100px;
+  border-radius: 30px;
+  color: rgb(48, 48, 48);
+  width: 300px;
+  height: 300px;
+  padding-left: 20px;
+}
+
+.locations > h3 {
+  font-size: 22px;
+}
+
+.locations > h3::after {
+  content: "";
+  background-image: url(pin.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 190px;
+  bottom: 250px;
+}
+
+
+
+
+.blog-posts {
+  background-image: url(bg-flip.svg);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 2300px;
+  padding-top: 0px;
+  background-position: top 100px left -200px;
+  padding-bottom: 300px;
+  padding-top: 250px;
+  text-align: center;
+  color: rgb(48, 48, 48);
+}
+
+.post-details > h4 > a {
+  text-decoration: none;
+  color: #8a85bb;
+  font-weight: 700;
+  border: 2px solid #8a85bb;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #e6b984;
+}
+
+.blog-posts > p {
+  margin-top: 40px;
+}
+
+.blog-posts > p > a {
+  text-decoration: none;
+  color: #695ecf;
+  font-weight: 700;
+  border: 2px solid #695ecf;
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: #e6b984;
+}
+
+.blog-posts > h2 { 
+  padding-bottom: 50px;
+  font-size: 30px; 
+}
+
+.blog-post {
+  display: inline-block;
+  width: 400px;
+}
+
+.blog-post > img {
+  width: 350px;
+  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+
+.instagram-feed {
+  background-image: linear-gradient(12deg, #21c06c, #7aed9f);
+  width: 800px;
+  margin: 40px;
+  border-radius: 30px;
+  padding: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.instagram-post {
+  padding: 50px;
+  color: rgb(236, 236, 236);
+}
+
+.instagram-post > img {
+  border-radius: 20px;
+}
+
+.instagram-feed > h3 {
+  font-size: 50px;
+  color: rgb(48, 48, 48);
+  font-family: 'Caveat';
+}
+
+.instagram-feed > h3 > a {
+  color:rgb(87, 116, 170);
+}
