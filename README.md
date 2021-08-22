@@ -3,12 +3,10 @@ A range of simple HTML projects for my Major Project
 
 
 ### 🚀 Used technologies
-Plain HTML/CSS and JS, no libraries.
+Plain HTML/CSS and JS, including Prism.js
 
 ### 📝 TODO
-- Fix input bugs in calculator (e.g. 5--5)
-- Check that the project file structure is compatible with Webstorm
-- Add Hover opacity overlay effects to imgs on projects page, and link imgs to each project
+- Submit the project
 
 ### ✅ Done 
 - Calculator
@@ -18,4 +16,4 @@ Plain HTML/CSS and JS, no libraries.
 - STARTED the main portfolio!
 
 ### ⚠️ Disclaimer
-This is a school project for Software Design and Development
+This is a school project for Software Design and Development, not an actual project. Some code is borrowed and referenced when necessary.
