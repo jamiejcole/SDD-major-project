@@ -38,6 +38,13 @@ body {
 	animation: fadeIn linear 0.5s;	
 }
 
+.greeting-desc {
+	color: white;
+	padding-left: 200px;
+	font-size: 25px;
+	width: 550px;
+	animation: fadeIn linear 0.5s;	
+}
 
 
 /* ----- Projects Page 1 ----- */
